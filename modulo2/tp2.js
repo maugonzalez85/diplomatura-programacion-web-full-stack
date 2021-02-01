@@ -83,20 +83,16 @@ var productos = [
   ];
 
 //Tp 2 - Desarrollar un “carrito de compras” donde...
-var titulo = document.createElement("div")
-var nombre = document.createTextNode("Almacen")
-titulo.appendChild(nombre)
-document.body.appendChild(titulo)
-
-for (let producto of productos)
-    
-}
 //el usuario presione sobre cada producto
+//      funcion para crear lista
 
+//       crear elemento o
 
-    // cambie el color 
+//        bucle para agregar
 
-    //y el mismo quede guardado en el carrito. 
+// cambie el color 
+
+//y el mismo quede guardado en el carrito. 
 
 
    
@@ -110,4 +106,4 @@ for (let producto of productos)
    
 //Solo puede comprar una unidad de cada producto.
 
-   //Tp 4 - Modificar el carrito desarrollado en la Unidad 2 para utilizar funciones arrow.
+//Tp 4 - Modificar el carrito desarrollado en la Unidad 2 para utilizar funciones arrow.
