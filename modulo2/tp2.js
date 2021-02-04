@@ -82,6 +82,14 @@ var productos = [
     },
   ];
 
+for (var i = 0; i < productos.length; i++){
+  let listado_productos = document.getElementById("listado de productos")
+  let li = document.createElement('LI')
+  let txt = document.createTextNode(productos[i].nombre + " Precio:" + productos[i].precio )
+  li.appendChild(txt)
+  listado_productos.appendChild(li)}
+
+  
 //Tp 2 - Desarrollar un “carrito de compras” donde...
 //el usuario presione sobre cada producto
 //      funcion para crear lista

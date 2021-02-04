@@ -1,2 +1,2 @@
-UNIDAD 1   -M1- HTML y CSS.pdf
-UNIDAD 1   -M1- HTML y CSS2.pdf
+*.pdf
+!spec/*.pdf
