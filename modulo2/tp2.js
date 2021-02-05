@@ -1,5 +1,5 @@
 var productos = [
-    {
+    { 
       nombre: "harina",
       precio: 35,
     },
