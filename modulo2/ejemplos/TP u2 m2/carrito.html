@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./carrito.css">
+    
+    <title>Carrito</title>
+</head>
+<body onload= "dibujar()">
+
+    <main>
+        <h1>lista de productos</h1>
+
+            <table id="tabla">
+                <tr id="tituloTablaProductos">
+                <th>Producto</th>
+                <th>Precio</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </table>
+
+    <div class="botonera">
+        <button onclick="comprar()">Comprar</button>
+    </div>
+    </main>
+
+    <aside>
+        <h1>Mi carrito</h1>
+
+        <table id="tablaCarrito">
+
+        </table>
+
+        <div id="total">
+
+        </div>
+    </aside>
+
+    <script src="carrito.js"></script>
+    
+</body>
+</html>

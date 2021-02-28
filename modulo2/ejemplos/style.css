@@ -1,0 +1,171 @@
+body {
+    background-color: #eeeeee;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: #ffffff;
+    max-width: 1500px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    border-bottom: solid 1px black;
+    width: 100%;
+}
+
+main {
+    background-color: #ffffff;
+    max-width: 1500px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid;
+    margin: 5px;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.item:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.item img {
+    width: 250px;
+    height: 250px;
+}
+
+.item .material-icons-outlined {
+    font-size: 40px;
+}
+
+
+nav {
+    margin: auto 2% auto 2%;
+}
+
+a {
+    margin: 5px;
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+aside {
+    width: 20%;
+}
+
+.carrito {
+    border: solid 1px;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 4px;
+}
+
+.material-icons-outlined {
+    font-size: 80px;
+    width: min-content;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carrito .prod_in_cart {
+    display: flex; 
+    align-items: center;
+    height: 40px;
+}
+
+.carrito .material-icons-outlined {
+    font-size: 25px;
+    margin: 2%;
+}
+
+.carrito .prod_in_cart p {
+    margin-left: 5px;
+}
+
+.productos {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-flow:  wrap;
+}
+
+.nav-left {
+    width: 40%;
+}
+
+
+.nav-right {
+    width: 40%;
+    text-align: right;
+}
+
+#total {
+    font-weight: bold; 
+    border-top: solid 1px; 
+    text-align: center; 
+    padding: 5px;
+}
+
+
+/* Small displays */
+
+@media (max-width: 1200px) {
+    .notas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .columnas {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .notas {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .columnas {
+        width: 100%;
+    }
+
+    aside {
+        display: none;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    .nav-left {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        
+    }
+
+    .nav-right {
+        text-align: left;
+    }
+}
+

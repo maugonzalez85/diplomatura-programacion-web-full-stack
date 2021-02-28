@@ -1,4 +1,4 @@
-var productos = [
+var prod = [
     { 
       nombre: "harina",
       precio: 35,
@@ -82,14 +82,35 @@ var productos = [
     },
   ];
 
-for (var i = 0; i < productos.length; i++){
-  let listado_productos = document.getElementById("listado de productos")
-  let li = document.createElement('LI')
-  let txt = document.createTextNode(productos[i].nombre + " Precio:" + productos[i].precio )
-  li.appendChild(txt)
-  listado_productos.appendChild(li)}
+let total = 0
+let ulist = document.getElementById("prod_list")
+for (let i = 0; i < prod.length; i++) {
+  let li = document.createElement('LI');
+  let costo = prod[i].precio;
+  let producto = prod[i].nombre
+  let etiqueta = prod[i].nombre + " $" + prod[i].precio
+  prod[i].cantidad = 1
+  li.innerHTML = ("<li> <button onclick='addtolist( "+ i +")'> " +etiqueta+"</button> </li>");
+  ulist.appendChild(li);
+}
 
+
+function addtolist(id) {
   
+  if (prod[id].cantidad < 1) {
+    alert("no hay mas")
+  } else {
+    let cart = []
+    
+    console.log(cart)
+    prod[id].cantidad --
+  }
+  
+  
+  
+  
+}
+
 //Tp 2 - Desarrollar un “carrito de compras” donde...
 //el usuario presione sobre cada producto
 //      funcion para crear lista
